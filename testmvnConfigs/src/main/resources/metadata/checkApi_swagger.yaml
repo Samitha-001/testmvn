@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: checkApi
+  description: API Definition of checkApi
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/checkapi
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response
