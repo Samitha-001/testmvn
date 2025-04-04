@@ -13,9 +13,9 @@
     <module>testmvnCompositeExporter</module>
   </modules>
   <scm>
-    <connection>scm:git:https://github.com/username/repository.git</connection>
-    <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>
-    <url>https://github.com/username/repository.git</url>
+    <connection>scm:git:https://github.com/Samitha-001/testmvn</connection>
+    <developerConnection>scm:git:https://github.com/Samitha-001/testmvn</developerConnection>
+    <url>https://github.com/Samitha-001/testmvn</url>
   </scm>
   <distributionManagement>
     <repository>
@@ -33,7 +33,10 @@
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0-M1</version>
-        <configuration />
+        <configuration>
+        <tagNameFormat>v@{project.version}</tagNameFormat>
+        <autoVersionSubmodules>true</autoVersionSubmodules>
+      </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
